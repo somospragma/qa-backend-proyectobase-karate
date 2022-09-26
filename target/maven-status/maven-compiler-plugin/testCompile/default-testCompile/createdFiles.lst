@@ -1,0 +1,5 @@
+users\put\UserPutRunner.class
+users\delete\UserDeleteRunner.class
+users\get\UserGetRunner.class
+users\post\UserPostRunner.class
+users\ManagementTest.class
