@@ -1,6 +1,0 @@
-users/ManagementTest.java
- users.ManagementTest
-users/get/UserGetRunner.java
- users.get.UserGetRunner
-users/delete/UserDeleteRunner.java
- users.delete.UserDeleteRunner

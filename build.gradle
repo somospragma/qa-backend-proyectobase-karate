@@ -2,24 +2,28 @@ plugins {
     id 'java'
 }
 
-repositories {
-    maven{
-        url 'https://repo.maven.apache.org/maven2'
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
-dependencies {
-    testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC4'
-    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
+repositories {
+    mavenCentral()
 }
 
-test{
+dependencies {
+    testImplementation 'io.karatelabs:karate-junit5:1.5.2'
+    testImplementation 'net.masterthought:cucumber-reporting:5.9.0'
+}
+
+test {
     useJUnitPlatform()
 }
 
-sourceSets{
-    test{
-        resources{
+sourceSets {
+    test {
+        resources {
             srcDir file('src/test/java')
             exclude '**/*.java'
         }
